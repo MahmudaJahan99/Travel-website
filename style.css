@@ -1,0 +1,428 @@
+/* Mulih font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/********** Global **********/
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+:root {
+    --primary-font: #FF5400;
+    --dark-1: #424247;
+    --dark-2: rgb(19, 19, 24);
+    --dark-3: rgba(19, 19, 24, 0.7);
+}
+
+/********** Default **********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 5rem auto;
+    border-radius: 1rem;
+}
+
+.section-contents {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.section-heading {
+    color: var(--dark-2);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.section-desc,
+.popular-tours .section-desc ul {
+    color: var(--dark-3);
+    line-height: 26px;
+    display: grid;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.btn-primary {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 800;
+    background-color: var(--primary-font);
+    border-radius: 8px;
+    padding: 0.875rem 2.125rem;
+    border: none;
+}
+
+/********** Navbar **********/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 0.5rem;
+}
+
+.logo h3 {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.logo h3 span {
+    color: var(--primary-font);
+}
+
+.nav-options ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-options ul a {
+    text-decoration: none;
+    margin-right: 2.75rem;
+    font-size: 1.125rem;
+    color: var(--dark-1);
+}
+
+.nav-options .active {
+    color: var(--primary-font);
+}
+
+/********** Banner **********/
+.banner {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%), url(Images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .banner-contents {
+    padding: 6.625rem 11.5625rem;
+}
+
+.banner .banner-contents .banner-desc {
+    color: white;
+    text-align: center;
+}
+
+.banner .banner-contents .banner-desc h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 1.5rem auto;
+}
+
+.travel-input {
+    padding: 1rem;
+    background: rgb(255, 255, 255, 0.3);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin: 4rem auto;
+}
+
+.travel-input input,
+.travel-input select,
+.travel-input button {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.travel-input button {
+    color: white;
+    background-color: var(--primary-font);
+}
+
+.fa-magnifying-glass {
+    margin-right: 0.5rem;
+}
+
+/********** Popular Tours **********/
+.popular-tours,
+.newsletter,
+.perfect-place {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3.3125rem;
+}
+
+.popular-tours .section-desc ul {
+    margin: 0;
+}
+
+.popular-tours .section-desc ul li,
+.perfect-place .section-desc ul li {
+    margin-left: 18px;
+}
+
+/********** Popular Tours **********/
+.collage-container,
+.collage-container .row {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.row h5 {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.collage-container .card-item {
+    position: relative;
+    filter: brightness(90%);
+}
+
+.collage-container .card-item img {
+    width: 100%;
+    height: 300px;
+}
+
+.collage-container .card-item h5 {
+    position: absolute;
+    top: 50%;
+    right: 40%;
+}
+
+.collage-container .row-1 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.collage-container .row-2 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.collage-container .row-3 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.collage-container .item6 {
+    grid-column: 1 / span 2;
+}
+
+.collage-container .item7 {
+    grid-column: 3 / span 3;
+}
+
+
+/********** Choose Us **********/
+.card-container .row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container .row-1 .card-item {
+    width: calc((100% / 2) - 1rem);
+}
+
+.card-container .row-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.card-container .row-2 .card-item {
+    width: calc(100% / 2);
+}
+
+.card-contents {
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.card-contents img {
+    width: 10%;
+}
+
+.card-contents h3 {
+    color: var(--dark-2);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 1rem auto;
+}
+
+.card-contents p {
+    color: var(--dark-3);
+    line-height: 26px;
+}
+
+.pink-bg {
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.blue-bg {
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.red-bg {
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+
+/********** Deals & Discounts **********/
+.img-card-container .card-item {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.bg-img img {
+    width: 100%;
+}
+
+.white-bg {
+    width: 45%;
+    padding: 3rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.right {
+    position: absolute;
+    top: 18%;
+    right: 8%;
+}
+
+.left {
+    position: absolute;
+    top: 18%;
+    left: 8%;
+}
+
+.img-card-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.img-card-contents .icons-details {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.img-card-contents .icons-details .fa-solid {
+    color: var(--primary-font);
+}
+
+.img-card-contents small {
+    color: rgb(90, 90, 93);
+}
+
+.img-card-contents h5 {
+    color: var(--dark-2);
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.img-card-contents .desc {
+    color: rgb(90, 90, 93);
+}
+
+.img-card-contents .pricing {
+    color: var(--primary-font);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.img-card-container .btn-container {
+    width: fit-content;
+    margin: 3rem auto;
+}
+
+
+/********** Newsletter **********/
+.form-heading {
+    color: var(--dark-2);
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.form-container {
+    padding: 2.5rem;
+    border: 1px solid rgb(255, 84, 0);
+    border-radius: 16px;
+
+}
+
+form {
+    border-top: 1px solid rgba(19, 19, 24, 0.1);
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input {
+    padding: 1rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter .btn-container {
+    position: relative;
+}
+
+.newsletter .btn-container button {
+    position: absolute;
+    right: 5px;
+    bottom: 27%;
+    rotate: -30deg;
+}
+
+.newsletter .btn-container span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-content {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+    padding: 3.125rem;
+}
+
+.footer-content .logo {
+    margin: auto;
+}
+.footer-content .sns-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--dark-2);
+}
+.copyrights {
+    width: fit-content;
+    margin: auto;
+    padding: 3.125rem;
+    color: var(--dark-2);
+    font-family: Inter;
+}
