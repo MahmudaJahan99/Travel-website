@@ -7,6 +7,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
 
     <!-- Font Awesome CDN -->
     <script
@@ -28,13 +29,19 @@
         </div>
         <!-- Navigation -->
         <div class="nav-options">
-          <ul>
-            <li><a class="active" href="">Home</a></li>
-            <li><a href="">Packages</a></li>
-            <li><a href="">Testimonial</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+          <div class="navlink-list">
+            <ul>
+              <li><a class="active" href="">Home</a></li>
+              <li><a href="">Packages</a></li>
+              <li><a href="">Testimonial</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </nav>
 
@@ -148,7 +155,7 @@
               <h5>Srilanka</h5>
             </div>
             <!-- Item 4 -->
-            <div class="card-item">
+            <div class="card-item item4">
               <img src="Images/collage4.png" alt="" />
               <h5>North America</h5>
             </div>
@@ -178,7 +185,7 @@
       <section class="container">
         <!-- Text -->
         <div class="section-contents">
-          <h3 class="section-heading">Choose Your Destination</h3>
+          <h3 class="section-heading">Why Choose Us</h3>
           <p class="section-desc">
             Embark on a journey to the destinations that captivate your heart.
             Whether you're drawn to tranquil beaches, historic cities, or rugged
@@ -272,8 +279,10 @@
                 <h5>Tour To Satorini</h5>
                 <p class="desc">
                   Amet consectetur. Vulputate commodo felis molestie risus
-                  ornare nulla amet et. Libero commodo sagittis dignissim
-                  adipiscing quis. Habitant adipiscing.
+                  <span class="sm-hide md-hide"
+                    >ornare nulla amet et. Libero commodo sagittis dignissim
+                    adipiscing quis. Habitant adipiscing.</span
+                  >
                 </p>
                 <p class="pricing">Price: $1300-$1500</p>
                 <div>
@@ -302,10 +311,12 @@
                 </div>
                 <h5>Tour To Satorini</h5>
                 <p class="desc">
-                  Amet consectetur. Vulputate commodo felis molestie risus
-                  ornare nulla amet et. Libero commodo sagittis dignissim
-                  adipiscing quis. Habitant adipiscing.
-                </p>
+                    Amet consectetur. Vulputate commodo felis molestie risus
+                    <span class="sm-hide md-hide"
+                      >ornare nulla amet et. Libero commodo sagittis dignissim
+                      adipiscing quis. Habitant adipiscing.</span
+                    >
+                  </p>
                 <p class="pricing">Price: $1300-$1500</p>
                 <div>
                   <button class="btn-primary">Book Now</button>
@@ -333,10 +344,12 @@
                 </div>
                 <h5>Tour To Satorini</h5>
                 <p class="desc">
-                  Amet consectetur. Vulputate commodo felis molestie risus
-                  ornare nulla amet et. Libero commodo sagittis dignissim
-                  adipiscing quis. Habitant adipiscing.
-                </p>
+                    Amet consectetur. Vulputate commodo felis molestie risus
+                    <span class="sm-hide md-hide"
+                      >ornare nulla amet et. Libero commodo sagittis dignissim
+                      adipiscing quis. Habitant adipiscing.</span
+                    >
+                  </p>
                 <p class="pricing">Price: $1300-$1500</p>
                 <div>
                   <button class="btn-primary">Book Now</button>
@@ -345,7 +358,7 @@
             </div>
           </div>
           <!-- Button -->
-          <div class="btn-container">
+          <div class="btn-container sm-hide md-hide">
             <button class="btn-primary">See All Packages</button>
           </div>
         </div>
@@ -440,7 +453,7 @@
         </div>
       </div>
       <!-- Copyrights -->
-       <p class="copyrights">2017, All Rights Reserved.</p>
+      <p class="copyrights">2017, All Rights Reserved.</p>
     </footer>
   </body>
 </html>

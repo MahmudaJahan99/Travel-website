@@ -62,6 +62,10 @@ img {
 }
 
 /********** Navbar **********/
+.hamburger-menu {
+    display: none;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -84,6 +88,10 @@ img {
 
 .logo h3 span {
     color: var(--primary-font);
+}
+
+.nav-options {
+    display: flex;
 }
 
 .nav-options ul {
@@ -140,6 +148,7 @@ img {
     padding: 1rem;
     border-radius: 8px;
     border: none;
+    background-color: white;
 }
 
 .travel-input button {
@@ -169,7 +178,7 @@ img {
     margin-left: 18px;
 }
 
-/********** Popular Tours **********/
+/********** Choose Destination **********/
 .collage-container,
 .collage-container .row {
     display: grid;
@@ -194,7 +203,7 @@ img {
 
 .collage-container .card-item h5 {
     position: absolute;
-    top: 50%;
+    top: 135px;
     right: 40%;
 }
 
@@ -395,6 +404,7 @@ form input {
     font-weight: 400;
 }
 
+/********** Footer **********/
 footer {
     background: rgba(19, 19, 24, 0.05);
 }
@@ -413,12 +423,14 @@ footer {
 .footer-content .logo {
     margin: auto;
 }
+
 .footer-content .sns-links {
     display: flex;
     justify-content: center;
     gap: 2rem;
     color: var(--dark-2);
 }
+
 .copyrights {
     width: fit-content;
     margin: auto;
